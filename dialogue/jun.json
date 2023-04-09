@@ -1,0 +1,6 @@
+{
+	"npc_name": "Jun",
+	"general_cycles": [
+		"Jun Cycle 52\nDialogue:: Hey, XX! Do you have any hobbies or interests that you're passionate about?\nOption1:: I really enjoy farming, of course.\nOption2:: I love cooking, and trying out new recipes.\n\nResponse1:: That's fantastic! I can tell you put your heart into your work.[]Your farm has become a beautiful addition to Sun Haven.\nResponse2:: That's a wonderful hobby! I love how cooking allows people to express their creativity and bring joy to others.[]Maybe you could teach me a new recipe sometime.\n\nOption1a:: Thank you! I hope to keep improving my farm. //Relationship Jun52a 2 Happy\nOption1b:: I'm still learning, but I appreciate your encouragement.\nResponse1a:: I have no doubt you'll do amazing things, XX. Keep up the great work!\nResponse1b:: We all have to start somewhere, XX. I know you'll grow into a skilled farmer in no time.\n\nOption2a:: I'd love to share my favorite recipe with you! //Relationship Jun52b 2 Happy\nOption2b:: Maybe some other time, Jun.\nResponse2a:: That sounds delightful, XX. I can't wait to learn from you!\nResponse2b:: No problem, XX. Just let me know if you ever change your mind.\n\nEnd"	
+	]
+}
