@@ -1,2 +1,2 @@
-# extra-dialogue-mod
-SunHaven mod
+# Extra Dialogue
+A SunHaven mod for adding extra npc dialogue
