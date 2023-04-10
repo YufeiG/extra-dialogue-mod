@@ -1,28 +1,9 @@
 import os
-from re import L
 import UnityPy
 import json
 import shutil
-import uuid
 import argparse
-from UnityPy.classes import MonoBehaviour, PPtr
 import datetime
-from dataclasses import dataclass
-from typing import Dict, List
-
-@dataclass
-class DialogueCycle:
-    cycle_text: str
-    one_liners: list[str]
-
-@dataclass
-class NPCDialogueCycles:
-    npc_name: str
-    married_cycles: list[DialogueCycle]
-    dating_cycles: list[DialogueCycle]
-    general_cycles: list[DialogueCycle] # note these are used for dating too if you finish the dating cycles
-    one_liners: list[str] # one liners have requirements that I'm not extracting yet, but the progress tokens + priority should tell you when they get used
-    
 
 def unpack_all_assets(source_folder : str, destination_folder : str, npc: str):
     # iterate over all files in source folder
@@ -93,7 +74,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     date_time = datetime.datetime.now().strftime("%m%d%Y-%H%M%S")
-    parser.add_argument("-o", "--output", type=str, default=f"output-{date_time}", help="Output directory. If this folder already exists, it will be deleted!")
+    parser.add_argument("-o", "--output", type=str, default=f"extract-{date_time}", help="Output directory. If this folder already exists, it will be deleted!")
     parser.add_argument("-i", "--input", type=str, help="'Sun Haven_Data' directory, so the script can access the assets")
     parser.add_argument("-n", "--npc", type=str, default="", help="If provided, only extract for the given npc. Else extract all npcs.")
 
